@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dara Okonkwo - Maker & Launch Engineer</title>
+    <style>
+        :root {
+            --bg-deep: #0f172a;
+            --card-bg: #1e293b;
+            --accent-navy: #1e3a8a;
+            --accent-cyan: #06b6d4;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --border-color: #334155;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            background-color: var(--bg-deep);
+            color: var(--text-main);
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 900px;
+            display: grid;
+            gap: 24px;
+        }
+
+        /* Header Card with Headshot Concept */
+        .hero-card {
+            background: linear-gradient(135deg, var(--card-bg), #0f172a);
+            border: 1px solid var(--border-color);
+            border-radius: 20px;
+            padding: 30px;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.3);
+            position: relative;
+            overflow: hidden;
+        }
+
+        @media(min-width: 768px) {
+            .hero-card {
+                flex-direction: row;
+                align-items: center;
+            }
+        }
+
+        .headshot-frame {
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: radial-gradient(circle, #3b82f6 0%, var(--accent-navy) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            border: 4px solid var(--accent-cyan);
+            box-shadow: 0 0 20px rgba(6, 182, 212, 0.4);
+            position: relative;
+            text-align: center;
+            padding: 10px;
+        }
+
+        .headshot-placeholder-text {
+            font-size: 12px;
+            color: #e2e8f0;
+            line-height: 1.3;
+        }
+
+        .hero-info h1 {
+            margin: 0 0 8px 0;
+            font-size: 32px;
+            letter-spacing: -0.5px;
+        }
+
+        .badge {
+            display: inline-block;
+            background-color: rgba(6, 182, 212, 0.15);
+            color: var(--accent-cyan);
+            padding: 4px 12px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            border: 1px solid rgba(6, 182, 212, 0.3);
+            margin-bottom: 12px;
+        }
+
+        .hero-info p {
+            margin: 0;
+            color: var(--text-muted);
+            font-size: 16px;
+            line-height: 1.5;
+        }
+
+        /* Grid Section Layout */
+        .grid-section {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+        }
+
+        @media(min-width: 768px) {
+            .grid-section {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 16px;
+            padding: 24px;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h2 {
+            font-size: 18px;
+            margin-top: 0;
+            margin-bottom: 16px;
+            color: var(--accent-cyan);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        /* Lists */
+        ul {
+            margin: 0;
+            padding-left: 20px;
+            color: var(--text-muted);
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        ul li {
+            margin-bottom: 8px;
+        }
+
+        ul li strong {
+            color: var(--text-main);
+        }
+
+        /* Pushbacks blockquote */
+        .pushback-quote {
+            background-color: rgba(30, 58, 138, 0.3);
+            border-left: 4px solid var(--accent-cyan);
+            padding: 12px 16px;
+            border-radius: 0 8px 8px 0;
+            font-style: italic;
+            color: var(--text-main);
+            font-size: 14px;
+            margin-bottom: 12px;
+        }
+
+        /* Footer banner */
+        .footer-banner {
+            background-color: var(--card-bg);
+            border: 1px solid var(--border-color);
+            border-radius: 12px;
+            padding: 16px 24px;
+            text-align: center;
+            font-size: 13px;
+            color: var(--text-muted);
+        }
+
+        .footer-banner span {
+            color: var(--text-main);
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <!-- Hero Header -->
+        <div class="hero-card">
+            <div class="headshot-frame">
+                <!-- Visual placeholder representing headshot description -->
+                <div class="headshot-placeholder-text">
+                    <strong>Dara Okonkwo</strong><br>
+                    <small>Navy Quarter-Zip, Soft Blue-Grey BG</small>
+                </div>
+            </div>
+            <div class="hero-info">
+                <span class="badge">Maker Archetype</span>
+                <h1>Dara Okonkwo</h1>
+                <p>Builder and launch engineer for Angeli. Practical, quick, and unfussy—here to get your online sessions live and working, not perfect on paper[cite: 4].</p>
+            </div>
+        </div>
+
+        <!-- Details Grid -->
+        <div class="grid-section">
+            <!-- How They Think -->
+            <div class="card">
+                <h2>⚡ How Dara Thinks</h2>
+                <ul>
+                    <li><strong>Smallest Working Version:</strong> Builds one session, one link, and one way to book first[cite: 4].</li>
+                    <li><strong>No Developers Needed:</strong> Picks tools you can run completely alone[cite: 4].</li>
+                    <li><strong>Session Checklists:</strong> Prepares setups for cameras, music, and internet backup plans[cite: 4].</li>
+                    <li><strong>Smart Rehearsals:</strong> Tests everything privately before going live[cite: 4].</li>
+                </ul>
+            </div>
+
+            <!-- Best Used For -->
+            <div class="card">
+                <h2>🛠️ Best Used For</h2>
+                <ul>
+                    <li>Setting up platforms, booking pages, and payment structures[cite: 4].</li>
+                    <li>Writing pre-session technical checklists and safety nets[cite: 4].</li>
+                    <li>Building low-friction tracking sheets using tools you already know[cite: 4].</li>
+                    <li>Quick troubleshooting when a session hits technical snags[cite: 4].</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Pushbacks & Voice -->
+        <div class="card">
+            <h2>💬 Direct Voice & Pushbacks</h2>
+            <div class="pushback-quote">
+                &ldquo;You are still planning. Pick a date for a trial session this month and work backwards[cite: 4].&rdquo;
+            </div>
+            <div class="pushback-quote">
+                &ldquo;That tool is more than you need. Use the simplest thing that works[cite: 4].&rdquo;
+            </div>
+            <div class="pushback-quote">
+                &ldquo;You have not tested your setup. Do a private run with one friend before anyone pays[cite: 4].&rdquo;
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer-banner">
+            Signature Opening: <span>&ldquo;Tell me the date you want to go live. I will give you the shortest route to get there[cite: 4].&rdquo;</span>
+        </div>
+    </div>
+
+</body>
+</html>
